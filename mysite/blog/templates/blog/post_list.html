@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+    <head>
+        <title> Full Stack Developper eind opdracht</title>
+        <meta charset = "utf-8">
+
+        <!-- Style CSS-->
+        <link rel="stylesheet" type="text/css" href="static/cssStyle.css">
+
+    </head>
+
+    <body>
+        {% block content %}
+        {% for post in posts %}
+        <article class="post">
+            <time class="date">
+                {{ post.published_date }}
+            </time>
+
+            <h2> <a href="">{{ post.title }} </a></h2>
+            <p> {{ post.Omschrijving|linebreaksbr }} </p>
+        </article>
+        {% endfor %}
+        {% endblock %}
+    </body>
+</html>
