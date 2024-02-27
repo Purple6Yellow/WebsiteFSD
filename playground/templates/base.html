@@ -1,0 +1,128 @@
+<!-- MObile versie -->
+<!DOCTYPE html>
+
+<html lang="nl">
+    <head>
+        <title> Full Stack Developper: Eindopdracht</title>
+        <meta charset = "utf-8">
+
+        <!-- Style CSS
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+        <link rel="styleheet" type = "text/css" href="css/index.css">
+        -->
+        
+        <!-- MediaQuery . viewport  (browser weet nu op welke breedte het moet worden afgebeeld)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+
+            #boven{
+                background-color: rgba(255, 68, 0, 0.882);
+                color: white;
+                text-align: center;
+            }
+
+            footer{
+                background-color: rgba(255, 68, 0, 0.882);
+                text-align: center;
+            }
+
+            .menu{  
+                background-color: rgba(191, 56, 2, 0.945);
+                color: white;
+            }
+
+            .menu ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+            }
+
+            .menu li{
+                padding: 8px;
+                margin-bottom: 7px;
+                background-color: olive;
+                color: white;
+                float:center;
+            }
+
+            .menu a{
+                text-decoration:none;
+                color:white;
+            }
+
+            .menu li:hover {
+                background-color: yellow;
+             }
+
+            /* Fluid grid - 12 kolommen */
+
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}            
+
+/* Mediaquery: CSS waarde wanneer scherm groter is dan smartphone / 768px  */
+            @media only screen and (min-width: 768px){
+                #boven{
+                    background-color: purple;
+                    color: white;
+                    text-align: center;
+                    }
+                .menu li{
+                    padding: 8px;
+                    margin-bottom: 7px;
+                    background-color: olive;
+                    float:left;
+                }
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <!-- 1e  deel -->
+            <div class="col-12" id="boven">  
+                <h1>Muziekschool H&J</h1>
+                <h5> Luisterend oor voor talent!</h5>
+             </div>
+             <div class="row">
+                <!-- <div class="col-4"></div>-->
+                <div class="col-12 menu">  
+                    <ul>
+                        <li> <a href="/Index.html"> Home     </a></li>
+                        <li> <a href="/Overons.html"> Over ons </a></li>
+                        <li> <a href="/Tarieven.html"> Tarieven </a></li>
+                        <li> <a href="/Agenda.html"> Agenda </li>
+                        <li> <a href="/BlogJava.html"> Blog </li>
+                        <li> <a href="/Contact.html"> Contact  </a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-4"></div>-->
+             </div> <!-- Einde row -->
+        <section></section>
+
+        <footer class="col-12">
+            <p> @ Copyright 2021 Muziekschool H & J </p>
+            <p> (Dit is een oefenopdracht, alle informatie 
+                op deze website is fictief.) </p>    
+        </footer>
+
+    </body>
+    </html>
+        
+           
