@@ -1,0 +1,36 @@
+
+
+header{
+    height: 200 px;
+    background-color: orange;
+    
+}
+
+body{
+    background-color: brown;
+}
+
+section{
+    margin-left: 400px;
+    width: 500px;
+    background-color:pink;
+}
+
+article{
+    color: black;
+    width:500px;
+    margin-bottom: 40px;
+    border: 3px solid white;
+}
+
+footer{
+    height: 100 px;
+    background-color: blue;
+}
+
+
+a{
+    color:black;
+}
+
+ /* class */

@@ -1,0 +1,45 @@
+{% extends 'blog/base.html' %}
+
+
+{% block inhoud %}
+    <h1> Activiteiten van H&J </h1>
+    
+    {% for post in posts %}
+        <article class="post">
+            <time class="date">
+            </time>
+
+        <h2>  <a href="{% url 'post_inhoud' pk=post.pk %}">{{ post.title }} </a></h2>
+        <p> {{ post.Omschrijving|linebreaksbr }} </p>
+
+        <table>
+            <tr> 
+                <td> <p> Datum: </p></td>
+                <td>   </td>
+                <td>{{ post.Datum}}</td>
+                <td></td>
+            </tr>
+
+            <tr> 
+                <td> <p> Start: </p></td>
+                <td>  {{ post.Tijdstip_start}} </td>
+                <td> <p> Einde: </p></td>
+                <td>  {{ post.Tijdstip_eind}} </td>
+            </tr>
+
+            <tr> 
+                <td> <p> Kosten: </p></td>
+                <td>  {{ post.Kosten}} </td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        </table>
+      
+    
+        </article>
+    {% endfor %}
+{% endblock %}
+
+
+

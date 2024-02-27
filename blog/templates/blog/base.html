@@ -1,0 +1,46 @@
+
+{% load static %}
+<!DOCtype html>
+<html lang = "en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Link met CSS bestand-->
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+        <title>Eindopdracht</title> 
+    </head>
+
+    <body>
+        <header> 
+                {% block header %}
+                <!-- 1e  deel -->
+                    <div id="boven">  
+                        <h1>Muziekschool H&J</h1>
+                        <h5> Luisterend oor voor talent!</h5>
+                    </div>
+                    <div id="menu">  
+                        <ul>
+                          
+                            <li> <a href="Overons.html"> Over ons </a></li>
+                            <li> <a href="Tarieven.html"> Tarieven </a></li>
+                            <li> <a href="Contact.html"> Contact  </a></li>
+                            <li> <a href="Agenda.html"> Agenda </a></li>
+                            <li> <a href="Contact.html"> Blog </a></li>
+                        </ul>
+                    </div>
+                {% endblock %}
+                
+        </header>
+
+        <section>
+                {% block inhoud %}
+                {% endblock %} 
+        </section>
+
+        <footer> 
+            <div>update oktober 2023</div>
+        </footer>
+    </body>
+</html>
+

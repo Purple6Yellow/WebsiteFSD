@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+     <!-- Style CSS-->
+     {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css'%}">
+
+    <style>
+       
+      #divResult1, #divResult2, #divResult3 {
+            border: 3px solid #999;
+            background-color: #ffc;
+            margin-left: 100px;
+            margin-bottom: 50px;
+            margin-top: 10px;
+            padding: 4px;
+            width: 80%; 
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        .opmaak{
+            margin-left: 100px;
+
+        }
+        
+    </style>
+    <title>Blog Muziekschool H & J</title>
+
+    <!-- jQuery insluiten via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jQuery insluiten Animatie -->
+    <script src="{% static 'js/Animatie.js' %}"></script>
+    <!-- jQuery insluiten Ajax -->
+    <script src="{% static 'js/Ajax.js' %}"></script>
+
+
+    <!-- Jqeury UI toevoegen tbv. datepicker -->
+      <!-- Custom stijlen (themes) voor jQuery UI -->
+      <link href="{% static 'css/jquery-ui.css' %}" rel="stylesheet"/>
+      <!-- jQuery & jQuery UI insluiten -->
+      <script src="{% static 'js/jquery-ui.js' %}"></script>
+      <script src="{% static 'js/datepicker-nl.js' %}"></script>
+
+</head>
+
+<body>
+
+      <!-- 1e  deel -->
+    
+      <div id="boven">  
+        <h1>Muziekschool H&J</h1>
+        <h5> Overzichtpagina met 3 blog-artikelen</h5>
+     </div>
+     <div id="menu">  
+        <ul>
+            <li> <a href="/Index.html"> Home     </a></li>
+            <li> <a href="/Overons.html"> Over ons </a></li>
+            <li> <a href="/Tarieven.html"> Tarieven </a></li>
+            <li> <a href="/Agenda.html"> Agenda </li>
+            <li> <a href="/BlogJava.html"> Blog </li>
+            <li> <a href="/Contact.html"> Contact  </a></li>
+        </ul>
+     </div>
+
+    <!-- 2e  deel -->
+    <div class="opmaak">
+        <br> 
+        Kies een datum:
+        <input type="text" id="datepicker"/> 
+    </div>
+    
+
+    <h2 class = "opmaak"> Blog Overzichtpagina 3 blog artikelen </h2>
+    <button id="btnLoad" class="opmaak">Haal pagina</button>
+    <button id="btn1" class="opmaak"> Animatie</button>
+    <button id="btn2" class="opmaak"> Admin</button>
+    <div id="divResult1">Hier komt de 1e blog</div>
+    <div id="divResult2">Hier komt de 2e blog</div>
+    <div id="divResult3">Hier komt de 3e blog</div>
+
+    
+
+
+    <footer>
+        <p> @ Copyright 2021 Muziekschool H & J </p>
+        <p> (Dit is een oefenopdracht, alle informatie 
+            op deze website is fictief.) </p>
+    </footer>
+
+
+</body>
+
+</html>
+
+

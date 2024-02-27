@@ -1,0 +1,207 @@
+
+body{
+    margin:0 auto;
+    background-color:rgb(245, 245, 245);
+}
+#boven{
+    width:100%;
+    height: 100px;
+    background-color: rgba(255, 68, 0, 0.882);
+    color: white;
+    text-align: center;
+}
+
+#menu{
+    width:100%;
+    height: 20px;
+    background-color: rgba(191, 56, 2, 0.945);
+    color: white;
+    }
+
+                li{
+                    float: left;
+                    display: block;
+                    width: 5%;
+                }
+
+                a{
+                    color:white;
+                    text-decoration:none;
+                }
+                a:hover{
+                    color:black;
+                    clear: left;
+                }
+
+.LiLijst{
+    width: 100%;
+    position: static;
+}
+
+
+section{
+    display: flex; 
+    padding: 5px;
+    background-color:rgb(245, 245, 245);
+    /*height:100%; */   
+}
+
+
+.Inhoud1{
+    display: block;
+    padding: 10px;
+    width:30%;
+    background-color: #d05415;
+    
+    
+}
+
+.Inhoud2{
+    display:inline-block;
+    width:63%;
+    background-color:rgb(245, 245, 245);
+    
+    
+}
+
+
+footer{
+    background-color:rgba(191, 56, 2, 0.945);
+    text-align: center;
+
+
+}
+
+
+.p6{
+    font-size: small;
+
+}
+
+.kleurL{
+    color: #d89416;
+
+}
+
+
+.imgklein{
+    width: 250px;
+    height: 120px;
+}
+
+/* linkerkant image */
+.imgkleinSt{
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+
+
+   
+    
+ 
+
+     /*
+      position: relative;
+    bottom: 200px;
+    left: 400px;
+    vertical-align: middle;
+    float: right;
+    display: inline-block
+    position: relative;
+       top:15px;
+    right: 50px;
+    
+    static = op normale plaats
+    absoluut = verplaatsing tov bronelement
+    relatief = verplaatsing tov zijn oorspronkelijke plaats
+    fixes = gelijk aan absoluut + 1: scrolled niet weg. 2. bronelement is altijd de body
+    */
+
+p{
+    padding:15px;
+}
+
+
+.imggroot{
+    width: 250px;
+    height: 120px;
+}
+
+.tekstgebied{
+    padding: 20px; 
+
+}
+
+/* positie tekst */
+
+.tekstcenter{
+    text-align: center;
+}
+
+.tekstRe{
+    text-align: right;
+}
+
+
+/* breedte vlak */
+
+.middelbreed{
+    display: block;
+    width: 80%;
+    padding: 10px;
+    background-color:rgb(245, 245, 245);
+}
+
+/* positie image */
+
+.right{
+    width: 30%;
+    height: 50%;
+    vertical-align: middle;
+    float: right;
+    padding: 15px;
+}
+
+.left{
+    width: 30%;
+    height: 50%;
+    vertical-align: middle;
+    float: left;
+    padding: 15px;
+}
+
+#button{
+    background-color: #d89416;}
+
+@media screen and (max-width: 600px){
+
+    body{
+        background-color: purple;
+    }
+
+    #menu2{
+            background-color: rgba(191, 56, 2, 0.945);
+            color: white;
+            }
+
+                li{
+                    display: none;
+                    width: 5%;
+                }
+
+                a{
+                    color:white;
+                    text-decoration:none;
+                }
+                a:hover{
+                    color:black;
+                    clear: left;
+                }
+
+    }
+        
