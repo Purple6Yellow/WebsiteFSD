@@ -1,122 +1,77 @@
-<!DOCTYPE html>
+{% extends 'base.html' %} 
 
-<html lang="nl">
-    <head>
-        <title> Full Stack Developper eind opdracht</title>
-        <meta charset = "utf-8">
+{% load static %}
 
-        <!-- Style CSS-->
-        {% load static %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css'%}">
+{% block subtitle %}
+<h5> Over ons</h5>
+{% endblock subtitle %}
 
-    </head>
+{% block content %}
 
-    <body>
-        <!-- 1e  deel -->
-    
-            <div id="boven">  
-                <h1>Muziekschool H&J</h1>
-                <h5> over ons</h5>
-             </div>
-             <div id="menu">  
-                <ul>
-                    <li> <a href="/Index.html"> Home     </a></li>
-                    <li> <a href="/Overons.html"> Over ons </a></li>
-                    <li> <a href="/Tarieven.html"> Tarieven </a></li>
-                    <li> <a href="/Agenda.html"> Agenda </li>
-                    <li> <a href="/BlogJava.html"> Blog </li>
-                    <li> <a href="/Contact.html"> Contact  </a></li>
-                </ul>
-             </div>
-      
-        <!-- 2e  deel -->
-        <section>
-            <!--Linkerdeel 20%-->
-            <section class = "Inhoud1">
-                    <h3 class="tekstcenter"> Muziekschool voor iedereen! </h3> <br>
+<section class="row"> <!--START ROW-->
+    <!--Linkerdeel 20%-->
+    <div class="col-4 kleur">
+            <h3 class="tekstcenter"> Muziekschool voor iedereen! </h3> <br>
 
-                    <img class= "imgkleinSt" src="{% static 'img/kind.png' %}" alt="">
-                    <p> Voor een musicus zoals Jesse is het lastig om dat volledig professioneel te doen.
-                        Zijn ervaring op de muziekschool bracht hem op het idee echt een eigen school
-                        te beginnen. Jesse zag dat Hannah lesgeven ook geweldig goed kon, dus vroeg hij haar om meet te doen.
-                        Ze vonden een mooi pand en ze startten met veel enthousiasme de muziekschool. En daar 
-                        heeft hij nooit spijt van gekregen! Bij Jess en Hannah is het leuk en leerzaam! 
-                    </p>
-            </section>
+            <img class= "img2" src="{% static 'img/kind.png' %}" alt="">
+            <p> Voor een musicus zoals Jesse is het lastig om dat volledig professioneel te doen.
+                Zijn ervaring op de muziekschool bracht hem op het idee echt een eigen school
+                te beginnen. Jesse zag dat Hannah lesgeven ook geweldig goed kon, dus vroeg hij haar om meet te doen.
+                Ze vonden een mooi pand en ze startten met veel enthousiasme de muziekschool. En daar 
+                heeft hij nooit spijt van gekregen! Bij Jess en Hannah is het leuk en leerzaam! 
+            </p>
+    </div>
 
 
-            <!--rechterdeel 79%  -->
-            <section class="Inhoud2">
+    <!--rechterdeel 79%  -->
+    <div class="col-7">    
+            <!--Bovenste deel -->   
+            <h3 class="kleurL"> Hannah </h3>
+            <p class="p6">  docent Muziek </p>  
+            <img class = "img1 right" src="{% static 'img/hannah.png' %}" alt="">
+                
+            Hannah is een vrolijke, goedlachse vrouw van 39 jaar. Ze is de vriendin van Jesse. Hannah
+            is al van jongs af aan geinteresseerd in veel verschillende muziekstijlen. Haar ouders hebben het met 
+            de paplepel ingegoten. Langzamerhand werd de trompet echer haar favoriete instrument. Ze speelde op school
+            en had al jong optredens in buurthuizen, op braderieen, enzovoorts.
+                <br>  <br>
+            
+            Hannah volgde zelf vanaf haar zesde jaar les op de muziekschool. Vanwege haar talent kreef zij later priveles.
+            Op de middelbare school besteedde ze veel aandacht aan haar studie en de muziek schoot er een beetje bij in. 
+            Maar toen ze haar diploma had behaald, was het conservatorium een logische keus. Ook op het conservatorium viel haar talent op.
+            Ze werd gevraagd voor eht studentenorkest en speelde in haar vrije tijd in een jazzband. Daar ontmoette zij Jesse. Gedurende
+            haar studietijd kwamen medestudenten regelmatig naar haar toe met het verzoek om hulp. dat waren niet alleen trompetstudenten, maar ook 
+            studenten die andere blaasinstrumenten bespeelden. Hannah merkte dat bijles geven haar heel goed afging en dat ze het ontzettend leuk 
+            vond. 
+            <br>
 
-                    <!--Bovenste deel -->
-                    
-                                
-                    <div class="middelbreed">
-                            <h3 class="kleurL"> Hannah </h3>
-                            <p class="p6">  docent Muziek </p>  
-                            <img class = "right" src="{% static 'img/hannah.png' %}" alt="">
-                                
-                            Hannah is een vrolijke, goedlachse vrouw van 39 jaar. Ze is de vriendin van Jesse. Hannah
-                            is al van jongs af aan geinteresseerd in veel verschillende muziekstijlen. Haar ouders hebben het met 
-                            de paplepel ingegoten. Langzamerhand werd de trompet echer haar favoriete instrument. Ze speelde op school
-                            en had al jong optredens in buurthuizen, op braderieen, enzovoorts.
-                                <br>  <br>
-                            
-                            Hannah volgde zelf vanaf haar zesde jaar les op de muziekschool. Vanwege haar talent kreef zij later priveles.
-                            Op de middelbare school besteedde ze veel aandacht aan haar studie en de muziek schoot er een beetje bij in. 
-                            Maar toen ze haar diploma had behaald, was het conservatorium een logische keus. Ook op het conservatorium viel haar talent op.
-                            Ze werd gevraagd voor eht studentenorkest en speelde in haar vrije tijd in een jazzband. Daar ontmoette zij Jesse. Gedurende
-                            haar studietijd kwamen medestudenten regelmatig naar haar toe met het verzoek om hulp. dat waren niet alleen trompetstudenten, maar ook 
-                            studenten die andere blaasinstrumenten bespeelden. Hannah merkte dat bijles geven haar heel goed afging en dat ze het ontzettend leuk 
-                            vond. 
-                            <br>
+            Toen Jesse met het idee kwam om samen een muziekschool te beginnen, hoefde Hannah niet lang na te denken. Het
+            was de manier om van haar hobby haar beroep te maken en om muziekmaken te combineren met lesgeven. 
+            Bij Hannah zijn jong en oud in goede handen! <br> <br>
 
-                            Toen Jesse met het idee kwam om samen een muziekschool te beginnen, hoefde Hannah niet lang na te denken. Het
-                            was de manier om van haar hobby haar beroep te maken en om muziekmaken te combineren met lesgeven. 
-                            Bij Hannah zijn jong en oud in goede handen! <br> <br>
-
-                     <!--Onderste deel -->
-                   
-                     <div>
-                        <h3 class="kleurL"> Jesse </h3>
-                        <p class="p6">  docent Muziek </p>
-                        <img class = "left" src="{% static 'img/Jesse.jpeg' %}" alt="">
-                    
-                        <p> 
-                        Jesse is een zeer muzikale man van 41 jaar. Hij is de vriend van Hannah. In tegenstelling tot Hannah was 
-                        hij als jonge jongen niet erg geinteresseerd in muziek en al helemaal niet in muziek maken. Hij ging liever
-                        buiten spelen met zijn vriendjes of voetballen in het park. Zijn ouders vonden het echter wel belangrijk dat hij kennisnam
-                        van muziek en ze stuurden Jesse naar blokfluitles.  Daar leerde hij de beginselen en leerde hij noten lezen. 
-                        </p>
-                        <h3> Opleiding</h3>
-                        <P>
-                        Op de middelbare school was al duidelijk hoe talentvol hij was. Daarom ging hij naar het conservatorium, waar hij 
-                        Hannah ontmoette. Hij richtte zich op vele verschillende instrumenten en werd opgeleid tot een allround musicus. Maar zijn liefde
-                        voor de saxofoon en jazz bleef. Als bijbaantje gaf hij ook les op een muziekschoolen ook dat ging hem goed af. 
-                        </P>
-                    </div>
-                </div>
-                            
-                     
+            <!--Onderste deel -->
+        
+            <div>
+            <h3 class="kleurL"> Jesse </h3>
+            <p class="p6">  docent Muziek </p>
+            <img class = "img1 left" src="{% static 'img/Jesse.jpeg' %}" alt="">
+        
+            <p> 
+            Jesse is een zeer muzikale man van 41 jaar. Hij is de vriend van Hannah. In tegenstelling tot Hannah was 
+            hij als jonge jongen niet erg geinteresseerd in muziek en al helemaal niet in muziek maken. Hij ging liever
+            buiten spelen met zijn vriendjes of voetballen in het park. Zijn ouders vonden het echter wel belangrijk dat hij kennisnam
+            van muziek en ze stuurden Jesse naar blokfluitles.  Daar leerde hij de beginselen en leerde hij noten lezen. 
+            </p>
+            <h3> Opleiding</h3>
+            <P>
+            Op de middelbare school was al duidelijk hoe talentvol hij was. Daarom ging hij naar het conservatorium, waar hij 
+            Hannah ontmoette. Hij richtte zich op vele verschillende instrumenten en werd opgeleid tot een allround musicus. Maar zijn liefde
+            voor de saxofoon en jazz bleef. Als bijbaantje gaf hij ook les op een muziekschoolen ook dat ging hem goed af. 
+            </P>
+            </div>
+    </div>
+                        
+    </section>   <!--EINDE ROW-->
 
 
-            </section>
-
-
-
-
-
-
-        </section>    <!-- einde 2e deel -->
-         
- 
-
-    <footer>
-        <p> @ Copyright 2021 Muziekschool H & J </p>
-        <p> (Dit is een oefenopdracht, alle informatie 
-            op deze website is fictief.) </p>
-       
-</footer>
-
-</body>
-</html>
+        {% endblock content %} 

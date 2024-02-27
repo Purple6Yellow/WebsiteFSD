@@ -35,7 +35,7 @@
 
             .menu ul{
                 list-style-type: none;
-                margin:0;
+                margin: 0;
                 padding:0;
             }
 
@@ -54,26 +54,62 @@
 
             .menu li:hover {
                 background-color: yellow;
-             }
+                }
 
-            /* Fluid grid - 12 kolommen */
+            .kleur /* linkergedeelte van de website */{
+                background-color: #f5b392;
+                padding: 10px;
+            }
+            .img1{
+                    width: 30%;
+                    height: auto;
+                }
 
-            [class*="col-"]{
+            .img2{
+                width: 60%;
+                height: auto;
+            }
+            .right{
+                vertical-align: middle;
+                float: right;
+                padding: 15px;
+            }
+
+            .left{
+                vertical-align: middle;
                 float: left;
                 padding: 15px;
             }
-                .col-1 {width: 8.33%;}
-                .col-2 {width: 16.66%;}
-                .col-3 {width: 25%;}
-                .col-4 {width: 33.33%;}
-                .col-5 {width: 41.66%;}
-                .col-6 {width: 50%;}
-                .col-7 {width: 58.33%;}
-                .col-8 {width: 66.66%;}
-                .col-9 {width: 75%;}
-                .col-10 {width: 83.33%;}
-                .col-11 {width: 91.66%;}
-                .col-12 {width: 100%;}            
+
+            .kleurL/* Letterkleur titels */{
+                color: #d89416;
+            }
+
+            #button{
+                background-color: #d89416;
+                border-bottom: black;
+                position: relative;
+                    left:5%;
+            }
+
+/* Fluid grid - 12 kolommen */
+
+            [class*="col-"]{
+            float: left;
+            padding: 15px;
+                    }
+                        .col-1 {width: 8.33%;}
+                        .col-2 {width: 16.66%;}
+                        .col-3 {width: 25%;}
+                        .col-4 {width: 33.33%;}
+                        .col-5 {width: 41.66%;}
+                        .col-6 {width: 50%;}
+                        .col-7 {width: 58.33%;}
+                        .col-8 {width: 66.66%;}
+                        .col-9 {width: 75%;}
+                        .col-10 {width: 83.33%;}
+                        .col-11 {width: 91.66%;}
+                        .col-12 {width: 100%;}            
 
 /* Mediaquery: CSS waarde wanneer scherm groter is dan smartphone / 768px  */
             @media only screen and (min-width: 768px){
@@ -88,8 +124,8 @@
                     background-color: olive;
                     float:left;
                 }
-            }
 
+            }
 
         </style>
     </head>
@@ -98,7 +134,10 @@
         <!-- 1e  deel -->
             <div class="col-12" id="boven">  
                 <h1>Muziekschool H&J</h1>
+
+                {% block subtitle %}
                 <h5> Luisterend oor voor talent!</h5>
+                {% endblock subtitle %}
              </div>
              <div class="row">
                 <!-- <div class="col-4"></div>-->
@@ -114,7 +153,14 @@
                 </div>
                 <!-- <div class="col-4"></div>-->
              </div> <!-- Einde row -->
-        <section></section>
+        <section>
+
+
+            {% block content %}
+            {% endblock content %}
+
+
+        </section>
 
         <footer class="col-12">
             <p> @ Copyright 2021 Muziekschool H & J </p>
@@ -125,4 +171,4 @@
     </body>
     </html>
         
-           
+   
