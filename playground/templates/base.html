@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <style>
-
+        /*  Mobile First  */
             #boven{
                 background-color: rgba(255, 68, 0, 0.882);
                 color: white;
@@ -24,12 +24,12 @@
             }
 
             footer{
-                background-color: rgba(255, 68, 0, 0.882);
+                background-color:  rgba(255, 68, 0, 0.882);
                 text-align: center;
             }
 
             .menu{  
-                background-color: rgba(191, 56, 2, 0.945);
+                background-color:#d43a02e1;
                 color: white;
             }
 
@@ -42,7 +42,7 @@
             .menu li{
                 padding: 8px;
                 margin-bottom: 7px;
-                background-color: olive;
+                background-color: inherit;
                 color: white;
                 float:center;
             }
@@ -53,13 +53,18 @@
             }
 
             .menu li:hover {
-                background-color: yellow;
+                background-color:  rgba(255, 68, 0, 0.882);
                 }
 
+
             .kleur /* linkergedeelte van de website */{
-                background-color: #f5b392;
-                padding: 10px;
+                background-color: #d43a02e1;
+                text-align: center;
+                padding:10px;
+                height:100%;
             }
+
+
             .img1{
                     width: 30%;
                     height: auto;
@@ -81,18 +86,32 @@
                 padding: 15px;
             }
 
+/* letters */
             .kleurL/* Letterkleur titels */{
-                color: #d89416;
+                color:hwb(16 38% 1% / 0.882);
             }
 
+            .LT1{
+                font-weight: 100;
+            }
+
+/* .... */
+
             #button{
-                background-color: #d89416;
+                background-color:#d43a02e1;
                 border-bottom: black;
                 position: relative;
                     left:5%;
             }
+            .RDeel{
+                padding:20px;
+                margin-left: 30px;
+            }
 
-/* Fluid grid - 12 kolommen */
+
+
+/* Fluid grid - 12 kolommen 
+   tbv telefoon scherm          */
 
             [class*="col-"]{
             float: left;
@@ -101,10 +120,10 @@
                         .col-1 {width: 8.33%;}
                         .col-2 {width: 16.66%;}
                         .col-3 {width: 25%;}
-                        .col-4 {width: 33.33%;}
+                        .col-4 {width: 100%;}
                         .col-5 {width: 41.66%;}
                         .col-6 {width: 50%;}
-                        .col-7 {width: 58.33%;}
+                        .col-7 {width: 100%;}
                         .col-8 {width: 66.66%;}
                         .col-9 {width: 75%;}
                         .col-10 {width: 83.33%;}
@@ -114,24 +133,45 @@
 /* Mediaquery: CSS waarde wanneer scherm groter is dan smartphone / 768px  */
             @media only screen and (min-width: 768px){
                 #boven{
-                    background-color: purple;
+                    background-color: rgba(255, 68, 0, 0.882);
                     color: white;
                     text-align: center;
                     }
                 .menu li{
                     padding: 8px;
                     margin-bottom: 7px;
-                    background-color: olive;
+                    background-color: inherit;
                     float:left;
                 }
 
+                /* Fluid grid - 12 kolommen 
+                    tbv groot scherm          */
+
+                [class*="col-"]{
+                float: left;
+                padding: 15px;
+                        }
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}    
             }
 
         </style>
     </head>
 
     <body>
+
         <!-- 1e  deel -->
+        <header>
             <div class="col-12" id="boven">  
                 <h1>Muziekschool H&J</h1>
 
@@ -153,14 +193,14 @@
                 </div>
                 <!-- <div class="col-4"></div>-->
              </div> <!-- Einde row -->
+        </header>
+
+
         <section>
-
-
             {% block content %}
             {% endblock content %}
-
-
         </section>
+
 
         <footer class="col-12">
             <p> @ Copyright 2021 Muziekschool H & J </p>
